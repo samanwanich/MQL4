@@ -3,7 +3,7 @@ INDIC In = new INDIC;
 
 input int OrdersLimit = 5;
 input double Lot = 0.01;
-input int TP = 100;
+input int TP = 200;
 input int SL = 2000;
 
 int check = -1;
@@ -57,9 +57,9 @@ void OnTick()
         }
      }
    Comment("Balance : ",AccountBalance(),"\n",
-           "Equity : ",AccountEquity(),"\n",
-           "MA25 - MA50 : ",In.MA(25) - In.MA(50),"\n");
+           "Equity : ",AccountEquity(),"\n");
   }
+  
 //+------------------------------------------------------------------+
 //|                                                                  |
 //+------------------------------------------------------------------+
